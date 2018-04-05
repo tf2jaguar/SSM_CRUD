@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<!-- 数据库列一般是以单词命名，单词间以下划线分隔，而java属性一般采用驼峰命名法
+			这样设置就可以自动进行映射表中的列和类中的属性
+		 -->
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+		 <!-- 打印查询语句 -->
+        <setting name="logImpl" value="STDOUT_LOGGING" />
+	</settings>
+	
+	<typeAliases>
+	<!--通过package, 可以直接指定package的名字， mybatis会自动扫描你指定包下面的javabean,
+     	 并且默认设置一个别名，默认的名字为： javabean 的首字母小写的非限定类名来作为它的别名。
+      	也可在javabean 加上注解@Alias 来自定义别名， 例如： @Alias(user) 
+      <package name="com.dy.entity"/>
+       -->
+	<!-- <typeAlias alias="UserEntity" type="com.dy.entity.User"/> -->
+		<package name="com.jelly.crud.bean"/>
+	</typeAliases>
+	
+	<plugins>
+		<plugin interceptor="com.github.pagehelper.PageInterceptor">
+			<!-- 分页参数合理化   ，，默认false禁用-->
+			<!-- 启用合理化是，如果pageNum<1会查询第一页，如果pageNum>pages -->
+			<!-- 禁用合理化是，如果pageNum<1或pageNum>pages 会返回空数据 -->
+			<property name="reasonable" value="true"/>
+		</plugin>
+	</plugins>
+
+</configuration>
+
