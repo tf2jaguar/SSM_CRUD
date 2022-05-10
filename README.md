@@ -1,9 +1,9 @@
 <div align="center">  
     <p>
-        <a href="https://jelly54.github.io"><img src="https://badgen.net/badge/jelly54/read?icon=sourcegraph&color=4ab8a1" alt="read" /></a>
-        <img src="https://badgen.net/github/stars/jelly54/SSM_CRUD?icon=github&color=4ab8a1" alt="stars" />
-        <img src="https://badgen.net/github/forks/jelly54/SSM_CRUD?icon=github&color=4ab8a1" alt="forks" />
-        <img src="https://badgen.net/github/open-issues/jelly54/SSM_CRUD?icon=github" alt="issues" />
+        <a href="https://tf2jaguar.github.io"><img src="https://badgen.net/badge/tf2jaguar/read?icon=sourcegraph&color=4ab8a1" alt="read" /></a>
+        <img src="https://badgen.net/github/stars/tf2jaguar/SSM_CRUD?icon=github&color=4ab8a1" alt="stars" />
+        <img src="https://badgen.net/github/forks/tf2jaguar/SSM_CRUD?icon=github&color=4ab8a1" alt="forks" />
+        <img src="https://badgen.net/github/open-issues/tf2jaguar/SSM_CRUD?icon=github" alt="issues" />
     </p>
 </div>
 
@@ -40,7 +40,7 @@ ps：此项目笔者写了很详细的备注，便于理解，已更新，换为
 /src/webapp/静态主/js/index.crud.js
 ```
 
-源码下载地址：--> https://github.com/jelly54/SSM_CRUD
+源码下载地址：--> https://github.com/tf2jaguar/SSM_CRUD
 
 ## 功能点
 >1、分页  
